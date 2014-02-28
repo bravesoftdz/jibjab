@@ -34,14 +34,12 @@ implementation
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   if (paramcount>0) then begin
-    //showmessage(paramstr(1));
     case paramstr(1)[1] of
       'e': MessageBeep(MB_ICONEXCLAMATION);
       'w': MessageBeep(MB_OK);
       'i': MessageBeep(MB_ICONASTERISK);
     end;
   end;
-  //showmessage(paramstr(0) + inttostr(paramcount));
 end;
 
 end.
